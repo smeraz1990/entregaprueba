@@ -43,8 +43,8 @@ if (args.iscluster == "cluster" && cluster.isPrimary) {
         cluster.fork();
     });
  } else {
-     servidor = app.listen(args.puerto || 3000, () => { 
-        logger.info(`Servidor conectado puerto info ${args.puerto} PID - ${process.pid}`)
+     servidor = app.listen(process.env.PORT || 3000, () => { 
+        logger.info(`Servidor conectado puerto info 3000 PID - ${process.pid}`)
     })
  }
 
