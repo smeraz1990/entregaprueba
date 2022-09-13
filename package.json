@@ -4,9 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "0x ./src/server.js",
-    "setup": "curl -X GET http://localhost:8080/info",
-    "test": "npm run setup && node ./src/benchmark.js"
+    "start": "node ./src/server.js"
   },
   "keywords": [],
   "author": "",
