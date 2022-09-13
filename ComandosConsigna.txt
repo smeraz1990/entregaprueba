@@ -1,0 +1,25 @@
+Comandos Ejecucion Consigna
+
+
+*Node
+node ./src/server.js -p 8080 --iscluster fork
+//Se verifican los procesadores en la computadora y se agrega en la tabla mostrada en la vista /info
+//Se revisa el numero de procesadores en cada uno de los metodos (fork, cluster)
+
+Forever
+forever start  ./src/server.js -p 8081 --iscluster cluster
+
+pm2
+pm2 start ./src/server.js (pm2 fork)
+pm2 start ./src/server.js -i max (pm2 cluster)
+// se finalizan procesos en cada uno de los metodos
+
+*nginx
+pm2 start --name "server1" ./src/server.js -- -- --puerto 8082
+pm2 start --name "server2" ./src/server.js -- -- --puerto 8083
+pm2 start --name "server3" ./src/server.js -- -- --puerto 8084
+pm2 start --name "server4" ./src/server.js -- -- --puerto 8085
+
+
+
+
