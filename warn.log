@@ -2657,3 +2657,4 @@
 {"level":"warn","message":"Ruta GET/auth-bloq?username=marian&password=qwerty123 no existe"}
 {"level":"warn","message":"Ruta GET/auth-bloq?username=marian&password=qwerty123 no existe"}
 {"level":"warn","message":"Ruta GET/favicon.ico no existe"}
+{"level":"warn","message":"Ruta GET/favicon.ico no existe"}
