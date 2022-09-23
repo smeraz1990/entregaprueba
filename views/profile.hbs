@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Perfil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+
+</head>
+  <section style="background-color: #eee;">
+  <div class="container py-5">
+    <h1>PERFIL</h1>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src="pruebacopia.png" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 150px;">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Correo (user)</p>
+              </div>
+              <div class="col-sm-9">
+                <input name='username' placeholder="user name (Email)" value="{{username}}" class="form-control" type="email" required>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Password</p>
+              </div>
+              <div class="col-sm-9">
+                <input name='password' placeholder="Password" value="{{password}}" class="form-control" type="password" required>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Nombre Completo</p>
+              </div>
+              <div class="col-sm-9">
+                <input name='nombre' placeholder="Nombre" value="{{nombre}}" class="form-control" type="text" required>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Direccion</p>
+              </div>
+              <div class="col-sm-9">
+                <input name='direccion' placeholder="Direccion" value="{{direccion}}" class="form-control" type="text" required>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Edad</p>
+              </div>
+              <div class="col-sm-9">
+                <input name='edad' placeholder="Edad" value="{{edad}}" class="form-control" type="text" required>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Telefono</p>
+              </div>
+              <div class="col-sm-9">
+                <input id="telefono" name='telefono' value="{{telefono}}" placeholder="Telefono" class="form-control" type="text" required>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script>
+    function redireccionar(pagina) {
+      location.href = pagina;
+    }
+
+    function goSignup() {
+      redireccionar('/login');
+    }
+  </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+
+</body>
+
+</html>

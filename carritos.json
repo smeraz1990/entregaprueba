@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "632cc9bf33883f520c6092c7"
+  },
+  "usuarioid": "632cc9bf33883f520c6092c5",
+  "productos": [
+    "productoid: '632bd2922f4e2638bb12b2ed',\nname': 'productonuevo',\nprice: '10.5',\n'qry': '1'\n"
+  ],
+  "__v": 0
+}]

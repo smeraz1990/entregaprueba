@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+
+</head>
+
+<body>
+
+  <div class="container my-5">
+    <div class="jumbotron">
+
+      <h1>REGISTRO</h1>
+      <br>
+      <form class="form" role="form" action="/register" method="post" autocomplete="off" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <input name='username (email)' placeholder="Email" class="form-control" type="email" required>
+        </div>
+        <div class="form-group">
+          <input name='password' placeholder="Password" class="form-control" type="password" required>
+        </div>
+        <div class="form-group">
+          <input name='nombre' placeholder="Nombre" class="form-control" type="text" required>
+        </div>
+        <div class="form-group">
+          <input name='Direccion' placeholder="Direccion" class="form-control" type="text" required>
+        </div>
+        <div class="form-group">
+          <input name='Edad' placeholder="Edad" class="form-control" type="text" required>
+        </div>
+        <div class="form-group row">
+         
+              <div class="col-md-3">
+                <select id="prefinter" name="prefinter" class="selectpicker" data-show-subtext="true" data-live-search="true">
+                  <option>Tom Foolery</option>
+                  <option>Bill Gordon</option>
+                  <option>Elizabeth Warren</option>
+                  <option>Mario Flores</option>
+                  <option>Don Young</option>
+                </select>
+              </div>
+              <div class="col-md-9">
+                <input name='Telefono' placeholder="Nombre" class="form-control" type="text" required>
+              </div>
+        </div>
+        <div class="form-group">
+          <input name='username' placeholder="Nombre" class="form-control" type="text" required>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-success my-3" type="submit" value="Singup">
+        </div>
+      </form>
+      <hr>
+      <div class="text-center"></div>
+      <button class="btn btn-success my-3" onclick="goSignup()">Login</button>
+    </div>
+
+    </div>
+  </div>
+
+  <script>
+    function redireccionar(pagina) {
+      location.href = pagina;
+    }
+
+    function goSignup() {
+      redireccionar('/login');
+    }
+  </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+
+</body>
+
+</html>
